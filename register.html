@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Student Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+</head>
+<body>
+    <h1><center>ABC College, Pune</center></h1>
+    <h2><center>Student Registration Form</center></h2>
+    <hr>
+    <h2><center>Basic Information</center></h2>
+
+    <form method="get" action="#">
+        <label>Student Name : <input type="text" name="studname" id="nm" placeholder="Student Full Name"></label><br><br>
+        <label>Father's Name : <input type="text" name="fname" id="fnm" placeholder="Father's Full Name"></label><br><br>
+        <label>Mother's Name : <input type="text" name="mname" id="mnm" placeholder="Mother's Full Name"></label><br><br>
+        <label>Gender : <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Other">Other
+        </label><br><br>
+        <label>Date of Birth : <input type="date" name="dob" id="dob"> </label><br><br>
+        <label>Email ID : <input type="email" name="mail" id="mail"></label><br><br>
+        <label>Contact No. : <input type="tel" name="contact" id="call"></label><br><br>
+        <label>Academic Year Level : <select name="year" id="yr">
+                            <option>---</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                            </select>
+        </label><br><br>
+        <label>Interested Department : <input list="dept" name="dept" id="dep">
+                            <datalist id="dept">
+                                <option>Computer</option>
+                                <option>Information Technology</option>
+                                <option>Electronics & Communication</option>
+                                <option>Instrumentation Engineering</option>
+                                <option>Mechanical</option>
+                                <option>Civil</option>
+                                <option>Chemical</option>
+                                <option>Electrical Engineering</option>
+                                
+                            </datalist>
+        </label><br><br>
+        <label>Previous Academic education : <input type="checkbox" name="12th" id="12th"> 12th Pass
+                                    <input type="checkbox" name="diploma" id="diploma"> Diploma Holder      
+        </label><br><br>
+        <label>
+            In a few sentences, write down why you want to become a student of our College : 
+            <br><textarea name="comment" id="comments" placeholder="Comments" rows="5" cols="80">      </textarea>
+        </label><br><br>
+        <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
